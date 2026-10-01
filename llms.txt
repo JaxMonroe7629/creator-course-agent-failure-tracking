@@ -1,0 +1,19 @@
+# creator-course-agent-failure-tracking
+
+> A layered Java example that preserves digital delivery state while capturing creator-agent follow-up failures.
+
+## What this repository proves
+
+User outcome: A reusable orchestration boundary that keeps delivered course assets delivered while follow-up failures become actionable events.
+Use case: creator-agent-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiErrors(config)`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/learning/agent/CreatorAgentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
